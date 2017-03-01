@@ -112,3 +112,17 @@ Processing by PostsController#new as HTML
   Parameters: {"post"=>{"action"=>"create", "authenticity_token"=>"wM0kUAuTuVVs64yO9C+2FgVExLWEkXYBL4fHjMvdHb/wXQBnEIZ1bXK7fKn5neP40gN03qULwt9kcGv5dkFKWg==", "commit"=>"Submit Post", "controller"=>"posts", "description"=>"asdf", "title"=>"Rails Introduction Quiz", "utf8"=>"✓"}}
   Rendered posts/new.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-03-01 13:30:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 432ms (Views: 419.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=my+book&post%5Bdescription%5D=beautiful&authenticity_token=kRF63slztOLXWYTrRsqIGZl736nlKND9QBy70m%2FxU8mmJiQ7ylPUFPjcZAlqMYn0Qy8p%2FFJGoEG%2Fm%2F2BPnv4gA%3D%3D" for ::1 at 2017-03-01 13:30:44 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"my book", "description"=>"beautiful"}, "authenticity_token"=>"kRF63slztOLXWYTrRsqIGZl736nlKND9QBy70m/xU8mmJiQ7ylPUFPjcZAlqMYn0Qy8p/FJGoEG/m/2BPnv4gA=="}
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
